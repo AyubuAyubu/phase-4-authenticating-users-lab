@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
   end
     #use delete the session once user refresh the screen
     def destroy
-        session.delete :user
+        session.delete :user_id
         head :no_content
     end
 end
